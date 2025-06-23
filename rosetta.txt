@@ -1,0 +1,63 @@
+This is an example for me to use should I go long periods without using vim or vim-like controls.
+First off I was able to get into this mode of writing by pressing the 'i' key to enter insert mode.
+To get out of it I can hit <ESC> or something else if it has been remapped.
+
+When you are back in the general view (normal mode aka command mode) you can navigate with the following:
+
+h moves left char by char.
+l moves right char by char.
+j moves down line by line.
+k moves up line by line.
+f followed by a char will jump on top of the next instance of that char if any exist.
+t followed by a char will go to the space right before the next instance of that char.
+w will move to the next word (forward).
+b will move to the next word (backward).
+() will move up and down sentence by sentence.
+{} will move up and down paragraph by paragraph.
+/ will allow you to regex search at the bottom of the screen.
+
+gg will move to the top of the file.
+G will move to the bottom of the file.
+
+Your movements will tracked in a form of navigation locations.
+Ctrl + i will move forward in your navigation locations.
+Ctrl + o will move backward in your navigation locations.
+
+For editing text:
+o will insert line beneath the current line.
+R will enter replace mode where you overwrite where your cursor is and while you type.
+x will delete forward.
+X will backspace.
+
+You can repreat actions by typing '.' in command mode.
+
+Example:
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+This is text that I will repeat 10 times by typing '10.' without quotes.
+
+yy will copy a line and p will paste it.
+
+yy will copy a line and p will paste it.
+yy will copy a line and p will paste it.
+yy will copy a line and p will paste it.
+yy will copy a line and p will paste it.
+yy will copy a line and p will paste it.
+yy will copy a line and p will paste it.
+
+This is an example of a macro. I typed qa to start macro and name is a. I will press q to quite recording. Then press @a to replay it.
+For example I forgot to add periods to the end of the yy lines above so I will do that now with a macro.
+I went to the beginning of the line and had a sequence like this: qa A . jk j @a @a @a ...
+
+Also Ctrl + shift + v works to paste from clipboard.
+The following link provided a lot of this information for me.
+
+http://danielmiessler.com/blog/vim
