@@ -61,3 +61,7 @@ Also Ctrl + shift + v works to paste from clipboard.
 The following link provided a lot of this information for me.
 
 http://danielmiessler.com/blog/vim
+
+When you lose track of your vimrc file....
+:scriptnames
+:e $MYVIMRC
